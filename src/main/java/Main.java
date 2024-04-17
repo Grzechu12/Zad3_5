@@ -1,14 +1,21 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
+  import java.util.Scanner;
 
-// import org.junit.jupiter.api.Test;
+  public class Main {
+      public static void main(String[] args) {
+          Scanner scanner = new Scanner(System.in);
+  System.out.print("Długość boku ");
+  int x = scanner.nextInt();
 
-public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
+
+      for (int i = 0; i < x; i++) {
+        for (int j=x; j>i+1; j--){
+          if (i == 0 || i == x - 1 || j == 0 || j == x - 1) {
+              System.out.print(" #");
+          } else {
+              System.out.print("  ");
+          }
+      }
+      System.out.println();
   }
-
-  // @Test
-  // void addition() {
-  //     assertEquals(2, 1 + 1);
-  // }
-}
+  }
+  }
